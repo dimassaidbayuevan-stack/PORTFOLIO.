@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="button-cube.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — [Dimas Said Bayu Evansa]</title>
+  <style>
+    :root{--bg:#ffffff;--muted:#777;--accent:#000;--pill:#f5f5f5}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:var(--accent)}
+    /* Top navbar */
+    .nav{display:flex;justify-content:center;padding:28px 20px}
+    .nav .menu{display:flex;gap:18px;background:var(--pill);padding:10px 18px;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+    .nav .menu a{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;text-decoration:none;color:var(--accent);font-weight:600}
+    .nav .menu a.active{background:#000;color:#fff;box-shadow:inset 0 -4px 10px rgba(0,0,0,0.08)}
+    /* Main layout */
+    .container{max-width:1200px;margin:40px auto;padding:0 36px;display:grid;grid-template-columns:1fr 420px;align-items:center;gap:40px}
+    .badge{display:inline-block;background:#f0f0f0;padding:6px 12px;border-radius:999px;color:#666;margin-bottom:18px}
+    h1{font-size:72px;margin:0 0 10px;letter-spacing:-1px}
+    h2{font-size:36px;margin:0 0 18px;font-weight:700}
+    p.lead{color:var(--muted);line-height:1.6;margin-bottom:18px;max-width:680px}
+    .meta{display:flex;gap:18px;color:var(--muted);align-items:center;margin-bottom:22px}
+    .actions{display:flex;gap:12px;margin-bottom:28px}
+    .btn{padding:12px 18px;border-radius:10px;border:2px solid #000;background:#000;color:#fff;text-decoration:none;font-weight:700}
+    .btn.ghost{background:transparent;color:#000;border:2px solid #ddd}
+    .socials{display:flex;gap:14px;align-items:center;margin-top:10px}
+    .socials a{width:36px;height:36px;display:inline-grid;place-items:center;border-radius:8px;border:1px solid #eee;text-decoration:none;color:#333}
+    /* Right card image */
+    .avatar{width:420px;height:420px;border-radius:18px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #f1f1f1}
+    .avatar img{max-width:100%;height:auto;display:block}
+    /* Floating vertical widgets */
+    .floating{position:fixed;right:28px;top:40%;transform:translateY(-50%);display:flex;flex-direction:column;gap:24px;align-items:center}
+    .float-btn{width:84px;height:84px;border-radius:999px;background:rgba(255,255,255,0.95);display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,0.06);font-weight:700;color:#000}
+    .float-count{font-size:18px;color:#d7d7d7}
+    /* Responsive */
+    @media (max-width:980px){.container{grid-template-columns:1fr;gap:30px;padding:0 20px}.avatar{width:320px;height:320px;margin:0 auto}.nav{padding:18px}}
+    @media (max-width:480px){h1{font-size:44px}h2{font-size:22px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="menu">
+      <a href="#home" class="active">🏠 Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section>
+      <div class="badge">Available for freelance work</div>
+      <h1>Hi, I'm <span style="font-weigth:900">[Dimas Said Bayu Evansa]</div></span></h1>
+      <h2>UI/UX Designer & Front-end Dev</h2>
+      <p class="lead">Saya membuat pengalaman digital yang menarik, fungsional, dan berpusat pada pengguna. Dengan 2+ tahun pengalaman dalam pengembangan web, saya mengubah ide menjadi produk melalui kode bersih dan desain yang matang.</p>
+
+      <div class="meta">
+        <div>📍 Based in [Jakarta Timur]</div>
+        <div>•</div>
+        <div>Available Now</div>
+      </div>
+
+      <div class="actions">
+        <a href="contact.html" style="text-decoration:none;">
+  <button class="btn cube">
+    <div class="bg-top"><div class="bg-inner"></div></div>
+    <div class="bg-right"><div class="bg-inner"></div></div>
+    <div class="bg"><div class="bg-inner"></div></div>
+    <div class="text">Contact Me</div>
+  </button>
+</a>
+       <div style="display:flex; gap:15px; align-items:center;">
+
+  <a href="CV-DIMAS_2_20250709_102540_0000.pdf" download style="text-decoration:none;">
+    <button class="btn cube">
+      <div class="bg-top"><div class="bg-inner"></div></div>
+      <div class="bg-right"><div class="bg-inner"></div></div>
+      <div class="bg"><div class="bg-inner"></div></div>
+      <div class="text">Download CV</div>
+    </button>
+  </a>
+
+</div>
+</a>
+      </div>
+
+      <div style="height:1px;background:#eee;margin:18px 0"></div>
+
+      <div style="color:#666;font-weight:600;margin-bottom:8px">Follow me:</div>
+      <div class="socials">
+        <a href="https://github.com/dimassaidbayuevan-stack/Portfolio.fromDimas.git" target="_blank">
+  <svg height="30" viewBox="0 0 16 16" width="30" fill="black">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+      0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+      -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+      .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+      0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+      0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27
+      c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+      .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95
+      .29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+      0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+  </svg>
+</a>
+        
+<a href="https://discord.com/users/572742421834629120" target="_blank">
+  <i class="fa-brands fa-discord">🎮</i>
+</a>
+       
+<a href="https://www.instagram.com/mochalattee_01?igsh=NGphbWNpejVsemVx" target="_blank">
+  <i class="fa-brands fa-instagram">📸</i>
+</a>
+        
+      </div>
+    </section>
+
+    <aside>
+      <div class="avatar">
+        <!-- Ganti URL gambar berikut dengan avatar Anda -->
+        <img src="Ragnarok.jpg" alt="Avatar" />
+      </div>
+    </aside>
+  </main>
+
+  <!-- Floating like/comment widgets -->
+  <div class="floating" aria-hidden="true">
+    <div class="float-btn">❤<div class="float-count" style="font-size:14px;margin-top:6px;color:#ccc">24.1rb</div></div>
+    <div style="width:72px;height:72px;border-radius:999px;background:transparent;display:grid;place-items:center;border:6px solid #fff"></div>
+  </div>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const href=a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href)?.scrollIntoView({behavior:'smooth'});
+        }
+      })
+    })
+  </script>
+</body>
+</html>
